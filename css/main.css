@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+
+
+
+* /* TODO: Change * to scrollcontainer */ {
+	scroll-behavior: smooth; 
+}
+
+
+body {
+overflow-x: hidden;
+padding: 0;
+margin: 0;
+}
+
+.main {
+margin: 0;
+padding: 0; 
+background-color: /* #060217 */ #5a3800;
+background: linear-gradient(180deg, rgba(191,134,40,1) 0%, rgba(90,56,0,1) 100%); 
+height: 100vh;
+display: block;
+width: 100vw;
+}
+
+
+.info {
+	min-height: 215px;
+	max-width: 50vw;
+    transform: translate(0%,-50%); /* TODO: Fix it later */
+	margin: 0;
+	position: absolute;
+	top: 50vh;
+	right: 16px;
+	padding: 0;
+	
+}
+
+.maintext {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	color: white;
+	font-size: 66px;
+	float: right;
+	text-align: right;
+	animation-name: fadein;
+	animation-duration: 1s;
+}
+
+.slogan {
+	display: inline-block;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	color: white;
+	font-size: 32px;
+	float: right;
+	text-align: right;
+	animation-name: fadein;
+	animation-duration: 1s;
+}
+
+@keyframes fadein {
+  0%   {opacity: 0%;}
+  50% {opacity: 0%;}
+  100%  {opacity: 100%; }
+}
+
+
+.highlight {
+	display: inline;
+	padding: 0;
+	margin: 0;
+	color: /* #0051ff */ #ffa700;
+	animation-name: highlight-color;
+	animation-duration: 2s;
+}
+@keyframes highlight-color {
+  0%   {color: white;}
+  75%  {color: white; }
+  100% {color: /*#0051ff*/ #ffa700;}
+}
+
+.button{
+	position: relative;
+	top: 5px;
+	display: flex;
+	float: right;
+	border-radius: 25px;
+	align-items: center; 
+	justify-content: center; 
+	font-family: 'Poppins', sans-serif;
+	font-size: 24px;
+	padding: 0;
+	margin: 0; 
+	background-color: /* #0051ff */ #ffa700;
+	width: 250px;
+	height: 45px;
+	color: white;
+	text-decoration: none;
+	box-shadow: 0px 0px 4px 0px #000000;
+	animation-name: fadeinsecond;
+	animation-duration: 3s;
+	transition: box-shadow 0.2s;
+}
+
+.button:hover {
+	box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.button:active {
+	box-shadow: 0px 0px 2px 2px #000000;
+}
+
+@keyframes fadeinsecond {
+  0%   {opacity: 0%;}
+  75%   {opacity: 0%;}
+  100%   {opacity: 100%;}
+}
+
+
+.showcaseimage {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	width: 40vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	animation-name: fadeinthird;
+	animation-duration: 4s;
+}
+
+@keyframes fadeinthird {
+  0%   {opacity: 0%;}
+  75%   {opacity: 0%;}
+  100%   {opacity: 100%;}
+}
+.imageshowcase {
+	object-fit: contain;
+	position: absolute;
+	transform: translate(0%,-50%);
+	top: 50vh;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	max-height: 100%;
+}
+
+.contactus-section{
+	margin-top: 24px;
+	margin-bottom: 24px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+}
+
+.label {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+.contactus-name {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+
+
+.contactus {
+margin: 0;
+padding: 0; 
+background-color: /* #060217 */ #421f08;
+min-height: 90vh;
+display: flex;
+width: 100vw;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+}
+
+.contactus-header{
+	background-color: /* #060217 */ #421f08;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 32px;
+	font-weight: 300;
+	text-align: center;
+	height: 10vh;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.button-small {
+	position: relative;
+	top: 10px;
+	display: flex;
+	border-radius: 25px;
+	align-items: center; 
+	justify-content: center; 
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	padding: 0;
+	margin: 0; 
+	background-color: /* #ffa700 */ #f55019;
+	width: 200px;
+	height: 35px;
+	color: black;
+	text-decoration: none;
+	box-shadow: 0px 0px 4px 0px #000000;
+	transition: box-shadow 0.2s;
+}
+
+
+.button-small:hover {
+	box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.button-small:active {
+	box-shadow: 0px 0px 2px 2px #000000;
+}
+
+.icon {
+display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+	.maintext {
+		font-size: 32px;
+	}
+	.slogan {
+		font-size: 16px;
+	}
+	.button {
+		width: 125px;
+		height: 22px;
+		font-size: 12px;
+	}
+	.contactus{	
+		flex-direction: column;
+	}
+}
